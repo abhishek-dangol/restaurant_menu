@@ -4,7 +4,7 @@ import Categories from "./Categories";
 import items from "./data";
 
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
-
+document.title = "Menu";
 function App() {
   const [menuItems, setMenuItems] = useState(items);
   const [categories, setCategories] = useState(allCategories);
